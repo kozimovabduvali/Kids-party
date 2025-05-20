@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  /* Fonts */
+  --font-gabriela: 'Gabriela', serif;
+  --font-nunito: 'Nunito', sans-serif;
+  /* Colors */
+  --color-primary: #6663FD;
+  --color-secondary: #FF89A1;
+  --color-red: #E84465;
+  /* Sizes */
+}
