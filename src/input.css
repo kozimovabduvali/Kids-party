@@ -11,5 +11,24 @@
   --color-primary: #6663FD;
   --color-secondary: #FF89A1;
   --color-red: #E84465;
-  /* Sizes */
+  --color-blue: #6865FD;
+}
+
+@layer base {
+  html {
+   @apply scroll-smooth
+  }
+  body {
+    @apply font-gabriela text-white overflow-x-hidden
+  }
+}
+
+.gradient-custom::after {
+  content: '';
+  @apply absolute top-0 left-0 z-10 size-full bg-gradient-to-t from-primary to-[#ACAAFF]/40 from-5%
+
+}
+
+button {
+  @apply cursor-pointer
 }

@@ -9,10 +9,94 @@
 </head>
 
 <body>
-  <div class="text-2xl">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem libero mollitia illo, provident non expedita
-    necessitatibus rerum repudiandae ipsum assumenda eaque animi id vero sapiente voluptatem tenetur in? Assumenda,
-    minus?
+  <div>
+    <!-- Header -->
+    <header class="w-full absolute top-0 left-0 z-50">
+      <div class="w-full max-w-325 mx-auto px-5 py-4 flex items-center justify-between gap-5">
+        <!-- Logo -->
+        <a class="inline-block" href="#">
+          <img class="h-9 lg:h-12.75" src="./assets/images/logo.png" alt="Logo">
+        </a>
+        <!-- Nav -->
+        <nav class="font-nunito hidden lg:inline-flex items-center gap-x-3 lg:gap-x-6 xl:gap-x-10 gap-5">
+          <a class="inline-block transition duration-200 hover:text-red" href="#">Программы</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#">Персонажи</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#">Галерея</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#">Взрослые праздники</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#">Отзывы</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#">Контакты</a>
+        </nav>
+        <!-- Social -->
+        <div class="hidden lg:inline-flex items-center gap-x-2">
+          <!-- Whatsapp -->
+          <a class="bg-white rounded-full size-9 flex items-center justify-center text-blue transition duration-200 hover:text-red"
+            href="#">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.3353 15.6227C10.0005 15.6227 6.47384 12.0948 6.47266 7.76007C6.47384 6.66125 7.36857 5.76772 8.46501 5.76772C8.57774 5.76772 8.68927 5.77722 8.79607 5.7962C9.03102 5.83536 9.25412 5.91487 9.45941 6.03471C9.48907 6.05251 9.50924 6.08099 9.51399 6.11422L9.97202 9.00129C9.97796 9.0357 9.96728 9.06892 9.94473 9.09384C9.69198 9.37389 9.36922 9.57562 9.00967 9.67648L8.83643 9.72513L8.90168 9.89244C9.49262 11.3971 10.6959 12.5991 12.2017 13.1925L12.369 13.2589L12.4177 13.0857C12.5185 12.7261 12.7203 12.4034 13.0003 12.1506C13.0205 12.1316 13.0478 12.1221 13.0751 12.1221C13.081 12.1221 13.0869 12.1221 13.094 12.1233L15.9811 12.5813C16.0155 12.5873 16.044 12.6063 16.0618 12.6359C16.1805 12.8412 16.26 13.0655 16.3003 13.3004C16.3193 13.4049 16.3276 13.5152 16.3276 13.6303C16.3276 14.728 15.4341 15.6215 14.3353 15.6227Z"
+                fill="currentColor" />
+              <path
+                d="M22.0239 9.71854C21.7901 7.0771 20.5798 4.62672 18.6159 2.81948C16.6402 1.00156 14.077 4.95911e-05 11.3965 4.95911e-05C5.51315 4.95911e-05 0.726296 4.78691 0.726296 10.6702C0.726296 12.6448 1.27095 14.5683 2.30213 16.2438L0.00244141 21.3344L7.36548 20.5501C8.64585 21.0746 10.001 21.3404 11.3953 21.3404C11.7619 21.3404 12.1381 21.3214 12.5154 21.2822C12.8477 21.2466 13.1835 21.1944 13.5134 21.128C18.4403 20.1324 22.037 15.7597 22.0654 10.7272V10.6702C22.0654 10.3498 22.0512 10.0294 22.0227 9.71854H22.0239ZM7.64908 18.3157L3.57539 18.75L4.79169 16.0551L4.54842 15.7288C4.53062 15.7051 4.51283 15.6813 4.49265 15.6541C3.43656 14.1957 2.87883 12.4727 2.87883 10.6714C2.87883 5.97472 6.69978 2.15378 11.3965 2.15378C15.7965 2.15378 19.526 5.5867 19.8856 9.96892C19.9046 10.2039 19.9153 10.44 19.9153 10.6726C19.9153 10.739 19.9141 10.8043 19.9129 10.8743C19.8227 14.8032 17.078 18.14 13.2381 18.9897C12.945 19.0549 12.6448 19.1048 12.3458 19.1368C12.0349 19.1724 11.7157 19.1902 11.3988 19.1902C10.2703 19.1902 9.1739 18.9719 8.13797 18.5399C8.02287 18.4937 7.91013 18.4438 7.80452 18.3928L7.65027 18.318L7.64908 18.3157Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <!-- Telegram -->
+          <a class="bg-white rounded-full size-9 flex items-center justify-center text-blue transition duration-200 hover:text-red"
+            href="#">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.512991 7.29352C0.556637 7.27132 0.600304 7.25023 0.642858 7.23025C1.38266 6.88171 2.13228 6.55537 2.88081 6.22903C2.92118 6.22903 2.98881 6.1813 3.02701 6.16576C3.08484 6.14023 3.14268 6.11581 3.20051 6.09028L3.53331 5.94487C3.75591 5.8483 3.9774 5.75174 4.19999 5.65517C4.64409 5.46203 5.08818 5.26889 5.53228 5.07464C6.42048 4.68836 7.30978 4.30097 8.19798 3.91469C9.08618 3.52841 9.97546 3.14102 10.8637 2.75475C11.7518 2.36847 12.6411 1.98108 13.5293 1.5948C14.4175 1.20852 15.3068 0.821132 16.195 0.434853C16.3925 0.348274 16.6064 0.219514 16.8181 0.181774C16.9959 0.149584 17.1694 0.0874251 17.3483 0.0530152C17.6877 -0.0124746 18.062 -0.0391146 18.3871 0.104075C18.4995 0.154025 18.6032 0.223954 18.6894 0.311644C19.1018 0.726782 19.044 1.40832 18.9567 1.99218C18.3489 6.06142 17.7412 10.1318 17.1323 14.201C17.0494 14.7594 16.9359 15.3721 16.5027 15.7251C16.1361 16.0236 15.6145 16.0569 15.1617 15.9304C14.7089 15.8028 14.3095 15.5352 13.9178 15.2722C12.2931 14.1777 10.6673 13.0833 9.04253 11.9888C8.65626 11.7291 8.22636 11.3894 8.23072 10.9177C8.2329 10.6335 8.39983 10.3804 8.57005 10.1551C9.982 8.28142 12.0192 6.99382 13.5348 5.20673C13.7487 4.95476 13.9167 4.49966 13.6232 4.35425C13.4486 4.26767 13.2478 4.38533 13.0885 4.49744C11.0851 5.91269 9.0829 7.32904 7.07955 8.74429C6.42595 9.20604 5.74071 9.68112 4.9529 9.79434C4.24802 9.89646 3.53877 9.69666 2.85681 9.49242C2.28504 9.32148 1.71435 9.1461 1.14586 8.96518C0.843615 8.86972 0.531544 8.76649 0.298038 8.55004C0.0645319 8.33359 -0.0696614 7.96951 0.0710969 7.68091C0.15948 7.49998 0.330794 7.38565 0.510834 7.29241L0.512991 7.29352Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <!-- WK -->
+          <a class="bg-white rounded-full size-9 flex items-center justify-center text-blue transition duration-200 hover:text-red"
+            href="#">
+            <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.0559 14.7143C4.97318 14.7143 0.362993 9.30892 0.170898 0.314331H4.21965C4.35264 6.91613 7.33742 9.71253 9.70165 10.2891V0.314331H13.5141V6.00802C15.8488 5.76298 18.3014 3.16838 19.1289 0.314331H22.9413C22.3059 3.83145 19.6462 6.42604 17.7548 7.49271C19.6462 8.35757 22.6755 10.6206 23.828 14.7143H19.6314C18.73 11.9756 16.4842 9.85667 13.5141 9.56838V14.7143H13.0559Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Menu btn -->
+        <button class="text-white lg:hidden transition duration-200 hover:text-red">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- Main -->
+    <section
+      class="relative text-center gradient-custom bg-cover"
+      style="background-image: url('./assets/images/hero_image.png');">
+      <div class="relative z-20 max-w-303.75 mx-auto px-5 pt-40 md:pt-52 lg:pt-72 pb-20 md:pb-32 lg:pb-45">
+        <h1 class="text-2xl lg:text-[40px] leading-none">
+          С нами ваш праздник станет настоящим событием, которое запомнится на долгие годы
+        </h1>
+        <button
+          class="bg-gradient-to-l to-[#FF9AAE] from-[#FF3F66] rounded-2xl py-2.5 lg:py-4 px-5 md:px-8 lg:px-15 mt-5 lg:mt-9 transition duration-200 hover:opacity-85">
+          <span class="text-lg lg:text-2xl">
+            Связаться с нами
+          </span>
+        </button>
+      </div>
+      <div class="w-full relative z-20 px-5">
+        <div class="relative z-10 max-w-253 w-full mx-auto">
+          <div class="w-full relative z-10 bg-secondary rounded-3xl py-9.5 lg:px-23 px-5">
+            <p class="font-nunito text-sm md:text-lg lg:text-2xl">
+              Агентство праздников "Сезам" – это команда профессионалов, готовых воплотить в жизнь ваши самые смелые
+              мечты. Мы создаем уникальные события для любого повода: от веселого детского дня рождения до
+            </p>
+          </div>
+          <div class="absolute top-0 left-0 -translate-x-2 lg:-translate-x-3 translate-y-2 lg:translate-y-5 z-0 size-full bg-[#FFC1CD]  rounded-3xl"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 z-0 w-full h-1/2 bg-white"></div>
+      </div>
+    </section>
   </div>
 </body>
 
