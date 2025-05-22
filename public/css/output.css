@@ -36,6 +36,9 @@
     --color-secondary: #FF89A1;
     --color-red: #E84465;
     --color-blue: #6865FD;
+    --color-gradient-to: #FF9AAE;
+    --color-gradient-from: #FF3F66;
+    --text-forty: 40px;
   }
 }
 @layer base {
@@ -292,26 +295,14 @@
   .h-72 {
     height: calc(var(--spacing) * 72);
   }
-  .h-101 {
-    height: calc(var(--spacing) * 101);
-  }
-  .h-102 {
-    height: calc(var(--spacing) * 102);
-  }
   .h-max {
     height: max-content;
   }
   .w-full {
     width: 100%;
   }
-  .w-max {
-    width: max-content;
-  }
   .max-w-7xl {
     max-width: var(--container-7xl);
-  }
-  .max-w-40 {
-    max-width: calc(var(--spacing) * 40);
   }
   .max-w-60 {
     max-width: calc(var(--spacing) * 60);
@@ -391,9 +382,6 @@
   .resize {
     resize: both;
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -415,15 +403,6 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
-  .gap-13 {
-    gap: calc(var(--spacing) * 13);
-  }
   .space-y-8 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -436,9 +415,6 @@
   }
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
-  }
-  .gap-y-6 {
-    row-gap: calc(var(--spacing) * 6);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -481,12 +457,12 @@
     --tw-gradient-position: to left in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .from-\[\#FF3F66\] {
-    --tw-gradient-from: #FF3F66;
+  .from-gradient-from {
+    --tw-gradient-from: var(--color-gradient-from);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .to-\[\#FF9AAE\] {
-    --tw-gradient-to: #FF9AAE;
+  .to-gradient-to {
+    --tw-gradient-to: var(--color-gradient-to);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .bg-cover {
@@ -893,11 +869,6 @@
       column-gap: calc(var(--spacing) * 6);
     }
   }
-  .lg\:gap-x-8 {
-    @media (width >= 1024px) {
-      column-gap: calc(var(--spacing) * 8);
-    }
-  }
   .lg\:rounded-3xl {
     @media (width >= 1024px) {
       border-radius: var(--radius-3xl);
@@ -985,6 +956,11 @@
       font-size: 40px;
     }
   }
+  .lg\:text-forty {
+    @media (width >= 1024px) {
+      font-size: var(--text-forty);
+    }
+  }
   .lg\:leading-tight {
     @media (width >= 1024px) {
       --tw-leading: var(--leading-tight);
@@ -1009,11 +985,6 @@
   .xl\:gap-x-10 {
     @media (width >= 1280px) {
       column-gap: calc(var(--spacing) * 10);
-    }
-  }
-  .xl\:gap-x-13 {
-    @media (width >= 1280px) {
-      column-gap: calc(var(--spacing) * 13);
     }
   }
 }

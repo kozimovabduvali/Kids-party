@@ -19,6 +19,9 @@
   --color-secondary: #FF89A1;
   --color-red: #E84465;
   --color-blue: #6865FD;
+  --color-gradient-to: #FF9AAE;
+  --color-gradient-from: #FF3F66;
+  --text-forty: 40px;
 }
 
 @layer base {
