@@ -22,7 +22,7 @@
           <a class="inline-block transition duration-200 hover:text-red" href="#programs">Программы</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#characters">Персонажи</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#gallery">Галерея</a>
-          <a class="inline-block transition duration-200 hover:text-red" href="#">Взрослые праздники</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#cost">Взрослые праздники</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#">Отзывы</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#">Контакты</a>
         </nav>
@@ -77,7 +77,7 @@
           С нами ваш праздник станет настоящим событием, которое запомнится на долгие годы
         </h1>
         <button
-          class="bg-gradient-to-l to-[#FF9AAE] from-[#FF3F66] rounded-2xl py-2.5 lg:py-4 px-5 md:px-8 lg:px-15 mt-5 lg:mt-9 transition duration-200 hover:opacity-85">
+          class="w-full xs:w-max bg-gradient-to-l to-[#FF9AAE] from-[#FF3F66] rounded-2xl py-2.5 lg:py-4 px-5 md:px-8 lg:px-15 mt-5 lg:mt-9 transition duration-200 hover:opacity-85">
           <span class="text-lg lg:text-2xl">
             Связаться с нами
           </span>
@@ -339,10 +339,38 @@
           <!-- 6 -->
           <div class="lg:col-span-5 group relative h-55 md:h-64 lg:h-76 xl:h-92 overflow-hidden">
             <img class="size-full object-cover transition duration-200 group-hover:scale-105"
-              src="./assets/images/gallery-1.png" alt="image">
+              src="./assets/images/gallery-6.png" alt="image">
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Расчёт стоимости детского праздника -->
+    <section id="cost" class="relative pt-16 md:pt-20 lg:pt-26">
+      <div class="relative grid md:grid-cols-2 gap-5 lg:gap-8 xl:gap-13 z-10 max-w-7xl mx-auto px-5 lg:px-4.5">
+        <!-- Left -->
+        <div class="group h-64 md:h-80 lg:h-102 overflow-hidden">
+          <img class="size-full object-cover transition duration-200 group-hover:scale-105"
+            src="./assets/images/gallery-6.png" alt="img">
+        </div>
+        <!-- Right -->
+        <div class="flex flex-col justify-center">
+          <h2 class="uppercase text-primary text-2xl lg:text-[40px] leading-none">
+            Расчёт стоимости детского праздника
+          </h2>
+          <p class="max-w-90 font-nunito lg:text-2xl text-primary mt-2">
+            Для точного расчёта ответьте на несколько вопросов.
+          </p>
+          <button
+            class="w-full xs:w-max bg-gradient-to-l to-[#FF9AAE] from-[#FF3F66] rounded-2xl py-2.5 px-8 lg:px-15 mt-3 lg:mt-6 transition duration-200 hover:opacity-85">
+            <span class="text-lg lg:text-2xl">
+              Далее
+            </span>
+          </button>
+        </div>
+      </div>
+      <img class="absolute top-0 right-0 -translate-y-1/4 h-72 md:h-90 lg:h-120"
+        src="./assets/images/banner-animation.png" alt="banner-animation">
     </section>
   </main>
 </body>
