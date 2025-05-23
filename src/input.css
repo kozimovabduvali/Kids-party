@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 @theme {
   /* Breakpoints */
@@ -15,30 +14,29 @@
   --font-gabriela: 'Gabriela', serif;
   --font-nunito: 'Nunito', sans-serif;
   /* Colors */
-  --color-primary: #6663FD;
-  --color-secondary: #FF89A1;
-  --color-red: #E84465;
-  --color-blue: #6865FD;
-  --color-gradient-to: #FF9AAE;
-  --color-gradient-from: #FF3F66;
+  --color-primary: #6663fd;
+  --color-secondary: #ff89a1;
+  --color-red: #e84465;
+  --color-blue: #6865fd;
+  --color-gradient-to: #ff9aae;
+  --color-gradient-from: #ff3f66;
   --text-forty: 40px;
 }
 
 @layer base {
   html {
-   @apply scroll-smooth
+    @apply scroll-smooth;
   }
   body {
-    @apply font-gabriela text-white overflow-x-hidden
+    @apply font-gabriela text-white overflow-x-hidden;
   }
 }
 
 .gradient-custom::after {
   content: '';
-  @apply absolute top-0 left-0 z-10 size-full bg-gradient-to-t from-primary to-[#ACAAFF]/40 from-5%
-
+  @apply absolute top-0 left-0 z-10 size-full bg-gradient-to-t from-primary to-[#ACAAFF]/40 from-5%;
 }
 
 button {
-  @apply cursor-pointer
+  @apply cursor-pointer;
 }

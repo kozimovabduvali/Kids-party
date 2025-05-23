@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- CSS -->
   <link rel="stylesheet" href="./css/output.css">
   <title>Kids Party</title>
 </head>
@@ -23,7 +26,7 @@
           <a class="inline-block transition duration-200 hover:text-red" href="#characters">Персонажи</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#gallery">Галерея</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#cost">Взрослые праздники</a>
-          <a class="inline-block transition duration-200 hover:text-red" href="#">Отзывы</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#review">Отзывы</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#">Контакты</a>
         </nav>
         <!-- Social -->
@@ -372,7 +375,64 @@
       <img class="absolute top-0 right-0 -translate-y-1/4 h-72 md:h-90 lg:h-120"
         src="./assets/images/banner-animation.png" alt="banner-animation">
     </section>
+
+    <!-- Review -->
+    <section id="review" class="relative pt-16 md:pt-20 lg:pt-26 px-5">
+      <h2 class="uppercase text-primary text-center text-2xl lg:text-forty mb-5 md:mb-8 lg:mb-13">Отзывы родителей</h2>
+      <div class="relative max-w-291 mx-auto">
+        <!-- Slider -->
+        <div class="lg:!w-full lg:!max-w-251 swiper review-swiper !px-5 lg:!px-0 !-mx-5 lg:!mx-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="h-120 lg:h-162.5" src="./assets/images/review.png" alt="review">
+            </div>
+            <div class="swiper-slide">
+              <img class="h-120 lg:h-162.5" src="./assets/images/review.png" alt="review">
+            </div>
+            <div class="swiper-slide">
+              <img class="h-120 lg:h-162.5" src="./assets/images/review.png" alt="review">
+            </div>
+            <div class="swiper-slide">
+              <img class="h-120 lg:h-162.5" src="./assets/images/review.png" alt="review">
+            </div>
+            <div class="swiper-slide">
+              <img class="h-120 lg:h-162.5" src="./assets/images/review.png" alt="review">
+            </div>
+            <div class="swiper-slide">
+              <img class="h-120 lg:h-162.5" src="./assets/images/review.png" alt="review">
+            </div>
+          </div>
+        </div>
+        <!-- Next & Prev -->
+        <div class="mt-8 flex justify-center gap-x-16">
+          <button class="swiper-button-prev1 lg:absolute !top-1/2 lg:-translate-y-1/2 left-0 z-10">
+            <svg width="25" height="41" viewBox="0 0 25 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.91251 22.7818L20.062 40.9314L24.5986 36.3948L8.71738 20.5135L24.5986 4.63229L20.062 0.0957031L1.91251 18.2452C1.31104 18.8469 0.97315 19.6628 0.97315 20.5135C0.97315 21.3643 1.31104 22.1802 1.91251 22.7818Z"
+                fill="#6663FD" />
+            </svg>
+          </button>
+          <button class="swiper-button-next1 lg:absolute !top-1/2 lg:-translate-y-1/2 !right-0 z-10">
+            <svg width="25" height="41" viewBox="0 0 25 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.0875 22.7818L4.93795 40.9314L0.401367 36.3948L16.2826 20.5135L0.401367 4.63229L4.93795 0.0957031L23.0875 18.2452C23.689 18.8469 24.0268 19.6628 24.0268 20.5135C24.0268 21.3643 23.689 22.1802 23.0875 22.7818Z"
+                fill="#6663FD" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="max-w-"></div>
+    </section>
   </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- App JS -->
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
