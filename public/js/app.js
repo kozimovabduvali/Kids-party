@@ -1,3 +1,46 @@
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-menu');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileLinks = document.querySelectorAll('#mobile-menu nav a');
+
+// Function to open mobile menu
+function openMobileMenu() {
+  mobileMenu.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+}
+
+// Function to close mobile menu
+function closeMobileMenu() {
+  mobileMenu.classList.remove('active');
+  document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Open menu when clicking the menu button
+menuBtn.addEventListener('click', openMobileMenu);
+
+// Close menu when clicking the close button
+closeBtn.addEventListener('click', closeMobileMenu);
+
+// Close menu when clicking on a mobile link
+mobileLinks.forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
+
+// Close menu when clicking outside the menu (on the overlay)
+mobileMenu.addEventListener('click', function (e) {
+  // Only close if clicking directly on the overlay, not on its children
+  if (e.target === mobileMenu) {
+    closeMobileMenu();
+  }
+});
+
+// Close menu when pressing Escape key
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+    closeMobileMenu();
+  }
+});
+
 let swiper = new Swiper(".review-swiper", {
   loop: false,
   pagination: {
