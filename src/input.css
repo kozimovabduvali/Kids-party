@@ -41,7 +41,7 @@
 }
 .gradient-custom-2::after {
   content: '';
-  @apply absolute top-0 lg:left-1/2 z-0 size-full bg-yellow translate-y-[55%] lg:translate-y-0 lg:skew-x-12 lg:-translate-x-[10%] xl:-translate-x-[5%];
+  @apply absolute top-0 lg:left-1/2 z-0 size-full bg-yellow/70 lg:bg-yellow translate-y-[55%] lg:translate-y-0 lg:skew-x-12 lg:-translate-x-[10%] xl:-translate-x-[5%];
 }
 
 button {
