@@ -31,3 +31,44 @@ let swiper = new Swiper(".review-swiper", {
     },
   },
 });
+
+
+
+// Accordion
+const accordionButtons = document.querySelectorAll('.accordion-btn');
+
+// Hide all accordion contents initially
+document.querySelectorAll('.accordion-content').forEach(content => {
+  content.classList.remove('active');
+});
+
+accordionButtons.forEach(button => {
+  button.addEventListener('click', function () {
+    // Find the parent div that contains both the button and content
+    const accordionItem = this.closest('.space-y-3');
+
+    // Find the content div within this accordion item
+    const content = accordionItem.querySelector('.accordion-content');
+
+    // Find the plus icon
+    const plusIcon = this.querySelector('.plus-icon');
+
+    // Toggle active class on content
+    content.classList.toggle('active');
+
+    // Toggle active class on plus icon
+    plusIcon.classList.toggle('active');
+
+    // Close other accordions
+    accordionButtons.forEach(otherButton => {
+      if (otherButton !== button) {
+        const otherAccordionItem = otherButton.closest('.space-y-3');
+        const otherContent = otherAccordionItem.querySelector('.accordion-content');
+        const otherPlusIcon = otherButton.querySelector('.plus-icon');
+
+        otherContent.classList.remove('active');
+        otherPlusIcon.classList.remove('active');
+      }
+    });
+  });
+});

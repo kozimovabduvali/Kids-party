@@ -40,3 +40,20 @@
 button {
   @apply cursor-pointer;
 }
+
+.accordion-content {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.plus-icon {
+  transition: transform 0.3s ease;
+}
+
+.plus-icon.active {
+  transform: rotate(45deg);
+}
