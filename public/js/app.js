@@ -45,7 +45,7 @@ document.querySelectorAll('.accordion-content').forEach(content => {
 accordionButtons.forEach(button => {
   button.addEventListener('click', function () {
     // Find the parent div that contains both the button and content
-    const accordionItem = this.closest('.space-y-3');
+    const accordionItem = this.closest('.accordion-item');
 
     // Find the content div within this accordion item
     const content = accordionItem.querySelector('.accordion-content');
@@ -62,7 +62,7 @@ accordionButtons.forEach(button => {
     // Close other accordions
     accordionButtons.forEach(otherButton => {
       if (otherButton !== button) {
-        const otherAccordionItem = otherButton.closest('.space-y-3');
+        const otherAccordionItem = otherButton.closest('.accordion-item');
         const otherContent = otherAccordionItem.querySelector('.accordion-content');
         const otherPlusIcon = otherButton.querySelector('.plus-icon');
 
