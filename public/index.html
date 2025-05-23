@@ -27,7 +27,7 @@
           <a class="inline-block transition duration-200 hover:text-red" href="#gallery">Галерея</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#cost">Взрослые праздники</a>
           <a class="inline-block transition duration-200 hover:text-red" href="#review">Отзывы</a>
-          <a class="inline-block transition duration-200 hover:text-red" href="#">Контакты</a>
+          <a class="inline-block transition duration-200 hover:text-red" href="#contact">Контакты</a>
         </nav>
         <!-- Social -->
         <div class="hidden lg:inline-flex items-center gap-x-2">
@@ -424,8 +424,41 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
-      <div class="max-w-"></div>
+    <section id="contact" class="relative px-5 pt-16 md:pt-20 lg:pt-27">
+      <div class="max-w-7xl w-full mx-auto">
+        <div class="relative z-10 max-w-7xl w-full mx-auto">
+          <div
+            class="w-full relative z-10 bg-primary rounded-2xl lg:rounded-[21px lg:px-19 md:px-10 px-5 pt-6 md:pt-10 pb-6 md:pb-12 lg:pb-20">
+            <h3 class="text-xl lg:text-[36px] leading-tight text-white">
+              Оставьте заявку, и наш менеджер предоставит всю необходимую информацию
+            </h3>
+            <form action="#" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 font-nunito pt-7 lg:pt-12.5">
+              <!-- Name -->
+              <div class="text-xl bg-white rounded-[10px] px-5">
+                <input class="outline-none text-secondary placeholder:text-secondary/40 py-2.5 w-full" type="text"
+                  name="text" id="contact-name" placeholder="Имя">
+              </div>
+              <!-- Name -->
+              <div class="text-xl relative bg-white rounded-[10px] flex items-center gap-1.5 px-5">
+                <label for="contact-number" class="text-secondary">+7 </label>
+                <input
+                  class="outline-none text-secondary bg-white placeholder:text-secondary/40 rounded-[10px] py-2.5 w-full"
+                  type="number" name="number" id="contact-number" placeholder="999 999 99 99">
+              </div>
+              <!-- Button -->
+              <button
+                class="md:col-span-2 lg:col-span-1 font-gabriela w-full bg-gradient-to-l to-gradient-to from-gradient-from rounded-2xl py-2.5 px-8 lg:px-15 transition duration-200 hover:opacity-85">
+                <span class="lg:text-xl">
+                  Оставить заявку
+                </span>
+              </button>
+            </form>
+          </div>
+          <div
+            class="absolute top-0 left-0 -translate-x-2 lg:-translate-x-6 translate-y-2 lg:translate-y-6 z-0 size-full bg-primary/40  rounded-3xl">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
