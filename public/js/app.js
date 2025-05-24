@@ -50,30 +50,33 @@ function initializeUI() {
   };
   document.addEventListener('keydown', document._escListener);
 
-  // Swiper – initialize once per element
-  document.querySelectorAll('.review-swiper').forEach(swiperEl => {
-    if (!swiperEl.classList.contains('swiper-initialized')) {
-      new Swiper(swiperEl, {
-        loop: false,
-        pagination: {
-          el: swiperEl.querySelector('.swiper-pagination'),
-          clickable: true,
-        },
-        navigation: {
-          nextEl: swiperEl.querySelector('.swiper-button-next1'),
-          prevEl: swiperEl.querySelector('.swiper-button-prev1'),
-        },
-        breakpoints: {
-          320: { slidesPerView: 1.3, spaceBetween: 16 },
-          576: { slidesPerView: 2, spaceBetween: 16 },
-          640: { slidesPerView: 2.5, spaceBetween: 16 },
-          768: { slidesPerView: 3.2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 24 },
-        },
-      });
-      swiperEl.classList.add('swiper-initialized');
-    }
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.review-swiper').forEach(swiperEl => {
+      if (!swiperEl.classList.contains('swiper-initialized')) {
+        new Swiper(swiperEl, {
+          loop: false,
+          pagination: {
+            el: swiperEl.querySelector('.swiper-pagination'),
+            clickable: true,
+          },
+          navigation: {
+            nextEl: document.querySelector('.swiper-button-next1'),
+            prevEl: document.querySelector('.swiper-button-prev1'),
+          },
+          breakpoints: {
+            320: { slidesPerView: 1.3, spaceBetween: 16 },
+            576: { slidesPerView: 2, spaceBetween: 16 },
+            640: { slidesPerView: 2.5, spaceBetween: 16 },
+            768: { slidesPerView: 3.2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 24 },
+          },
+        });
+        swiperEl.classList.add('swiper-initialized');
+
+      }
+    });
   });
+
 
   // Accordion
   const accordionButtons = document.querySelectorAll('.accordion-btn');

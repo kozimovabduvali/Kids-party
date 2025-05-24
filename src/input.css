@@ -79,3 +79,8 @@ button {
   transform: translateX(0);
   opacity: 1;
 }
+
+
+.swiper-button-disabled {
+  @apply !opacity-75 !cursor-default
+}
